@@ -32,7 +32,8 @@ document.getElementById("wine-image-input").addEventListener("change", (e) => {
     if (file) {
         const reader = new FileReader();
         reader.onload = (event) => {
-            document.getElementById("wine-image").style.backgroundImage = `url(${event.target.result})`;
+            // Update the `src` of the <img> element
+            document.getElementById("wine-image").src = event.target.result;
         };
         reader.readAsDataURL(file);
     }
