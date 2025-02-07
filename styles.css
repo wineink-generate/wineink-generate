@@ -1,0 +1,192 @@
+
+@font-face {
+  font-family: 'YRDZSTBold';
+  src: url('assets/YRDZST Semibold/YRDZST Semibold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'YRDZSTLight';
+  src: url('assets/YRDZST Light/YRDZST Light.ttf') format('truetype');
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+.container {
+  width: 1200px;
+  height: 1200px;
+  position: relative;
+  margin: 20px auto;
+  background: white;
+  border: 2px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rectangle1 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: white;
+}
+
+.logo-word {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.wine-image {
+  width: 300px;
+  height: 800px;
+  position: absolute;
+  left: 50px;
+  top: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.frame1 {
+  width: 700px;
+  height: 150px;
+  position: absolute;
+  left: 400px;
+  top: 330px;
+  background: #AB2025;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.wine-name {
+  font-size: 35px;
+  font-family: 'YRDZSTBold';
+  text-align: center;
+}
+
+.wine-name-english {
+  font-size: 28px;
+  font-family: 'YRDZSTBold';
+  text-align: center;
+}
+
+.quick-comment {
+  width: 700px;
+  position: absolute;
+  left: 400px;
+  top: 500px;
+  text-align: center;
+  font-size: 28px;
+  font-family: 'YRDZSTLight';
+  color: black;
+}
+
+.details {
+  position: relative;
+  display: flex;
+  align-items: center;
+  left: 400px;
+  top: 550px;
+  font-size: 20px;
+  font-family: 'YRDZSTBold';
+  color: black;
+  margin-bottom: 10px;
+}
+
+.details .icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  flex-shrink: 0; /* Ensure icons don't shrink */
+}
+
+.detailinfo {
+  margin-left: 10px;
+  font-family: 'YRDZSTLight';
+}
+.grape {
+  width: 20px;
+  height: 30px;
+  margin-right: 13px;
+  margin-left: 4px;
+  flex-shrink: 0;
+}
+.map {
+  width: 28px;
+  height: 30px;
+  margin-right: 10px;
+  margin-left: 1px;
+  flex-shrink: 0;
+}
+
+.flavor-title {
+  position: absolute;
+  left: 400px;
+  top: 800px;
+  font-size: 28px;
+  font-family: 'YRDZSTBold';
+  color: #AB2025;
+  text-transform: uppercase;
+}
+
+.flavor-description {
+  position: absolute;
+  left: 400px;
+  top: 850px;
+  width: 700px;
+  font-size: 20px;
+  font-family: 'YRDZSTBold';
+  color: #AB2025;
+  line-height: 1.5;
+}
+
+.controls {
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.controls h2 {
+  margin-bottom: 20px;
+}
+
+.controls label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.controls input,
+.controls textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.generate-btn {
+  display: block;
+  padding: 10px 20px;
+  font-size: 18px;
+  background: #AB2025;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.generate-btn:hover {
+  background: #7d161a;
+}
