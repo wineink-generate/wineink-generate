@@ -9,7 +9,8 @@ function generateImage() {
     }).then((canvas) => {
         // Convert the canvas into a downloadable image
         const link = document.createElement("a");
-        link.download = "wine.png";
+        const name = document.getElementById('wine-name').innerHTML
+        link.download = name + '.png';
         link.href = canvas.toDataURL("image/png");
         link.click();
     });
