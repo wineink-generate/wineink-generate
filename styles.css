@@ -75,13 +75,14 @@ body {
   font-size: 28px;
   font-family: 'YRDZSTBold';
   text-align: center;
+  margin-top: 10px;
 }
 
 .quick-comment {
   width: 700px;
   position: absolute;
   left: 400px;
-  top: 500px;
+  top: 470px;
   text-align: center;
   font-size: 28px;
   font-family: 'YRDZSTLight';
@@ -94,7 +95,7 @@ body {
   align-items: center;
   left: 400px;
   top: 550px;
-  font-size: 20px;
+  font-size: 24px;
   font-family: 'YRDZSTBold';
   color: black;
   margin-bottom: 10px;
@@ -130,7 +131,7 @@ body {
   position: absolute;
   left: 400px;
   top: 800px;
-  font-size: 28px;
+  font-size: 32px;
   font-family: 'YRDZSTBold';
   color: #AB2025;
   text-transform: uppercase;
@@ -141,7 +142,7 @@ body {
   left: 400px;
   top: 850px;
   width: 700px;
-  font-size: 20px;
+  font-size: 24px;
   font-family: 'YRDZSTBold';
   color: #AB2025;
   line-height: 1.5;

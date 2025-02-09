@@ -6,12 +6,10 @@ function generateImage() {
     html2canvas(container, {
         width: 1200,
         height: 1200,
-        allowTaint: true, // Allow tainted canvases
-        useCORS: true,
     }).then((canvas) => {
         // Convert the canvas into a downloadable image
         const link = document.createElement("a");
-        link.download = "wine-details.png";
+        link.download = "wine.png";
         link.href = canvas.toDataURL("image/png");
         link.click();
     });
