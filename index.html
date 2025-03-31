@@ -7,91 +7,92 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="controls">
-  <h2>Edit Wine Details</h2>
-  <label for="wine-name">Wine Name (中文):</label>
-  <input type="text" id="wine-name-input" placeholder="Enter wine name (中文)">
+<div class="main-container">
+  <div class="controls">
+    <h2>Edit Wine Details</h2>
+    <label for="wine-name">Wine Name (中文):</label>
+    <input type="text" id="wine-name-input" placeholder="Enter wine name (中文)">
 
-  <label for="wine-name-english">Wine Name (English):</label>
-  <input type="text" id="wine-name-english-input" placeholder="Enter wine name (English)">
+    <label for="wine-name-english">Wine Name (English):</label>
+    <input type="text" id="wine-name-english-input" placeholder="Enter wine name (English)">
 
-  <label for="quick-comment">Quick Comment:</label>
-  <input type="text" id="quick-comment-input" placeholder="Enter a quick comment">
+    <label for="quick-comment">Quick Comment:</label>
+    <input type="text" id="quick-comment-input" placeholder="Enter a quick comment">
 
-  <label for="region">Region:</label>
-  <input type="text" id="region-input" placeholder="Enter region">
+    <label for="region">Region:</label>
+    <input type="text" id="region-input" placeholder="Enter region">
 
-  <label for="type">Type:</label>
-  <input type="text" id="type-input" placeholder="Enter type">
+    <label for="type">Type:</label>
+    <input type="text" id="type-input" placeholder="Enter type">
 
-  <label for="alcohol">Alcohol Content:</label>
-  <input type="text" id="alcohol-input" placeholder="Enter alcohol content">
+    <label for="alcohol">Alcohol Content:</label>
+    <input type="text" id="alcohol-input" placeholder="Enter alcohol content">
 
-  <label for="temperature">Serving Temperature:</label>
-  <input type="text" id="temperature-input" placeholder="Enter temperature">
+    <label for="temperature">Serving Temperature:</label>
+    <input type="text" id="temperature-input" placeholder="Enter temperature">
 
-  <label for="decant-time">Decant Time:</label>
-  <input type="text" id="decant-time-input" placeholder="Enter decant time">
+    <label for="decant-time">Decant Time:</label>
+    <input type="text" id="decant-time-input" placeholder="Enter decant time">
 
-  <label for="flavor-description">Flavor Description:</label>
-  <textarea id="flavor-description-input" placeholder="Enter flavor description"></textarea>
+    <label for="flavor-description">Flavor Description:</label>
+    <textarea id="flavor-description-input" placeholder="Enter flavor description"></textarea>
 
-  <label for="wine-image">Upload Wine Image:</label>
-  <input type="file" id="wine-image-input" accept="image/*">
+    <label for="wine-image">Upload Wine Image:</label>
+    <input type="file" id="wine-image-input" accept="image/*">
 
-  <button class="generate-btn" onclick="generateImage()">Generate Image</button>
-</div>
+    <button class="generate-btn" onclick="generateImage()">Generate Image</button>
+  </div>
 
-<div class="container" id="capture">
-  <div class="rectangle1">
-    <div class="logo-word" style="background-image: url('assets/logo.png');"></div>
-    <img class="wine-image" id="wine-image" src="assets/wine.png">
-    <div class="frame1">
-      <div class="wine-name" id="wine-name">Wine Name (中文)</div>
-      <div class="wine-name-english" id="wine-name-english">Wine Name (English)</div>
-    </div>
-    <div class="quick-comment" id="quick-comment">"Quick comment about the wine"</div>
-    <!-- Region -->
-    <div class="details">
-      <img src="assets/map.png" class="map" alt="Region Icon">
-      <span>产区 : </span>
-      <span id="region" class="detailinfo">---</span>
-    </div>
+  <div class="container" id="capture">
+    <div class="rectangle1">
+      <div class="logo-word" style="background-image: url('assets/logo.png');"></div>
+      <img class="wine-image" id="wine-image" src="assets/wine.png">
+      <div class="frame1">
+        <div class="wine-name" id="wine-name">Wine Name (中文)</div>
+        <div class="wine-name-english" id="wine-name-english">Wine Name (English)</div>
+      </div>
+      <div class="quick-comment" id="quick-comment">"Quick comment about the wine"</div>
+      <!-- Region -->
+      <div class="details">
+        <img src="assets/map.png" class="map" alt="Region Icon">
+        <span>产区 : </span>
+        <span id="region" class="detailinfo">---</span>
+      </div>
 
-    <!-- Type -->
-    <div class="details">
-      <img src="assets/grape.png" class="grape" alt="Type Icon">
-      <span>种类 : </span>
-      <span id="type" class="detailinfo">---</span>
-    </div>
+      <!-- Type -->
+      <div class="details">
+        <img src="assets/grape.png" class="grape" alt="Type Icon">
+        <span>种类 : </span>
+        <span id="type" class="detailinfo">---</span>
+      </div>
 
-    <!-- Alcohol Content -->
-    <div class="details">
-      <img src="assets/droplet.png" class="icon" alt="Alcohol Icon">
-      <span>酒精: </span>
-      <span id="alcohol" class="detailinfo">---</span>
-    </div>
+      <!-- Alcohol Content -->
+      <div class="details">
+        <img src="assets/droplet.png" class="icon" alt="Alcohol Icon">
+        <span>酒精: </span>
+        <span id="alcohol" class="detailinfo">---</span>
+      </div>
 
-    <!-- Serving Temperature -->
-    <div class="details">
-      <img src="assets/thermo.png" class="icon" alt="Temperature Icon">
-      <span>建议饮用温度: </span>
-      <span id="temperature" class="detailinfo">---</span>
-    </div>
+      <!-- Serving Temperature -->
+      <div class="details">
+        <img src="assets/thermo.png" class="icon" alt="Temperature Icon">
+        <span>建议饮用温度: </span>
+        <span id="temperature" class="detailinfo">---</span>
+      </div>
 
-    <!-- Decant Time -->
-    <div class="details">
-      <img src="assets/clock.png" class="icon" alt="Clock Icon">
-      <span>建议醒酒时间: </span>
-      <span id="decant-time" class="detailinfo">---</span>
-    </div>
-    <div class="flavor-title">风味描述：</div>
-    <div class="flavor-description" id="flavor-description">
-      Flavor description goes here. Add a long description about the wine’s taste, aroma, and finish.
+      <!-- Decant Time -->
+      <div class="details">
+        <img src="assets/clock.png" class="icon" alt="Clock Icon">
+        <span>建议醒酒时间: </span>
+        <span id="decant-time" class="detailinfo">---</span>
+      </div>
+      <div class="flavor-title">风味描述：</div>
+      <div class="flavor-description" id="flavor-description">
+        Flavor description goes here. Add a long description about the wine’s taste, aroma, and finish.
+      </div>
     </div>
   </div>
 </div>
-
 <script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
 </body>
